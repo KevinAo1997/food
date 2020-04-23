@@ -30,6 +30,12 @@ public class InsertUserReq implements Serializable {
     @NotBlank
     private String password;
 
+    /**
+     * 确认密码
+     */
+    @NotBlank
+    private String checkPassword;
+
 
 
 }

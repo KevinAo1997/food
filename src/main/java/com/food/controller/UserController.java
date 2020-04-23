@@ -67,6 +67,10 @@ public class UserController {
         if (isUserName) {
             return new FailResult<>(ApplicationEnum.USER_NAME_REPETITION);
         }
+        // 确认密码是否相同
+        if (! insertUserReq.getPassword().equals(insertUserReq.getCheckPassword())) {
+            return new FailResult<>(ApplicationEnum.PASSWORD_ERR);
+        }
         // 新增用户
         Boolean isInsertUser = userService.insertUser(insertUserReq);
         if (isInsertUser) {
