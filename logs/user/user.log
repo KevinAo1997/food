@@ -3533,3 +3533,38 @@ java.lang.NullPointerException: null
 2020-04-19 17:46:30,018 DEBUG 416 --- [http-nio-8086-exec-1] org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug/143 : ==>  Preparing: select id, car_name AS carName, car_location AS carLocation, car_status AS carStatus, car_type AS carType ,car_price AS carPrice , car_price_time AS carPriceTime , garage_id AS garageId from car where garage_id = ? LIMIT ?
 2020-04-19 17:46:30,019 DEBUG 416 --- [http-nio-8086-exec-1] org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug/143 : ==> Parameters: 39(Integer), 10(Integer)
 2020-04-19 17:46:30,054 DEBUG 416 --- [http-nio-8086-exec-1] org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug/143 : <==      Total: 2
+2020-04-23 17:44:28,723 INFO  16484 --- [main] org.springframework.boot.StartupInfoLogger.logStarting/55 : Starting FoodApplication on DESKTOP-HQCJC2V with PID 16484 (D:\IDEAWork\food\target\classes started by lenovo in D:\IDEAWork\food)
+2020-04-23 17:44:28,729 INFO  16484 --- [main] org.springframework.boot.SpringApplication.logStartupProfileInfo/651 : No active profile set, falling back to default profiles: default
+2020-04-23 17:44:29,713 WARN  16484 --- [main] org.mybatis.logging.Logger.warn/44 : No MyBatis mapper was found in '[com.food]' package. Please check your configuration.
+2020-04-23 17:44:30,210 INFO  16484 --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize/92 : Tomcat initialized with port(s): 8086 (http)
+2020-04-23 17:44:30,222 INFO  16484 --- [main] org.apache.juli.logging.DirectJDKLog.log/173 : Initializing ProtocolHandler ["http-nio-8086"]
+2020-04-23 17:44:30,223 INFO  16484 --- [main] org.apache.juli.logging.DirectJDKLog.log/173 : Starting service [Tomcat]
+2020-04-23 17:44:30,224 INFO  16484 --- [main] org.apache.juli.logging.DirectJDKLog.log/173 : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-23 17:44:30,357 INFO  16484 --- [main] org.apache.juli.logging.DirectJDKLog.log/173 : Initializing Spring embedded WebApplicationContext
+2020-04-23 17:44:30,358 INFO  16484 --- [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext/284 : Root WebApplicationContext: initialization completed in 1513 ms
+2020-04-23 17:44:31,113 INFO  16484 --- [main] org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize/181 : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-23 17:44:31,255 INFO  16484 --- [main] tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeStaticCache/60 : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-04-23 17:44:31,256 INFO  16484 --- [main] tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeStaticCache/60 : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-04-23 17:44:31,257 INFO  16484 --- [main] tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeStaticCache/60 : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-04-23 17:44:31,257 INFO  16484 --- [main] tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeEntityHelperCache/83 : Clear EntityHelper entityTableMap cache.
+2020-04-23 17:44:31,376 INFO  16484 --- [main] org.apache.juli.logging.DirectJDKLog.log/173 : Starting ProtocolHandler ["http-nio-8086"]
+2020-04-23 17:44:31,409 INFO  16484 --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start/204 : Tomcat started on port(s): 8086 (http) with context path ''
+2020-04-23 17:44:31,414 INFO  16484 --- [main] org.springframework.boot.StartupInfoLogger.logStarted/61 : Started FoodApplication in 3.446 seconds (JVM running for 6.43)
+2020-04-23 18:00:15,430 INFO  16484 --- [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown/218 : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-23 18:00:24,038 INFO  13220 --- [main] org.springframework.boot.StartupInfoLogger.logStarting/55 : Starting FoodApplication on DESKTOP-HQCJC2V with PID 13220 (D:\IDEAWork\food\target\classes started by lenovo in D:\IDEAWork\food)
+2020-04-23 18:00:24,045 INFO  13220 --- [main] org.springframework.boot.SpringApplication.logStartupProfileInfo/651 : No active profile set, falling back to default profiles: default
+2020-04-23 18:00:25,105 WARN  13220 --- [main] org.mybatis.logging.Logger.warn/44 : No MyBatis mapper was found in '[com.food]' package. Please check your configuration.
+2020-04-23 18:00:25,582 INFO  13220 --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize/92 : Tomcat initialized with port(s): 8086 (http)
+2020-04-23 18:00:25,597 INFO  13220 --- [main] org.apache.juli.logging.DirectJDKLog.log/173 : Initializing ProtocolHandler ["http-nio-8086"]
+2020-04-23 18:00:25,598 INFO  13220 --- [main] org.apache.juli.logging.DirectJDKLog.log/173 : Starting service [Tomcat]
+2020-04-23 18:00:25,599 INFO  13220 --- [main] org.apache.juli.logging.DirectJDKLog.log/173 : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-23 18:00:25,775 INFO  13220 --- [main] org.apache.juli.logging.DirectJDKLog.log/173 : Initializing Spring embedded WebApplicationContext
+2020-04-23 18:00:25,777 INFO  13220 --- [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext/284 : Root WebApplicationContext: initialization completed in 1596 ms
+2020-04-23 18:00:26,562 INFO  13220 --- [main] org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize/181 : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-23 18:00:26,685 INFO  13220 --- [main] tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeStaticCache/60 : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-04-23 18:00:26,687 INFO  13220 --- [main] tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeStaticCache/60 : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-04-23 18:00:26,687 INFO  13220 --- [main] tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeStaticCache/60 : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-04-23 18:00:26,688 INFO  13220 --- [main] tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeEntityHelperCache/83 : Clear EntityHelper entityTableMap cache.
+2020-04-23 18:00:26,808 INFO  13220 --- [main] org.apache.juli.logging.DirectJDKLog.log/173 : Starting ProtocolHandler ["http-nio-8086"]
+2020-04-23 18:00:26,845 INFO  13220 --- [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start/204 : Tomcat started on port(s): 8086 (http) with context path ''
+2020-04-23 18:00:26,852 INFO  13220 --- [main] org.springframework.boot.StartupInfoLogger.logStarted/61 : Started FoodApplication in 3.711 seconds (JVM running for 4.856)

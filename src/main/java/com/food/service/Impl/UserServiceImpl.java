@@ -41,7 +41,6 @@ public class UserServiceImpl implements UserService {
     @Override
     public Boolean insertUser(InsertUserReq insertUserReq) {
         User user = new User();
-        user.setName(insertUserReq.getName());
         user.setUsername(insertUserReq.getUsername());
         user.setPassword(MD5Util.string2MD5(insertUserReq.getPassword()));
 
