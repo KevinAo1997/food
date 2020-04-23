@@ -1,7 +1,9 @@
 package com.food.service.Impl;
 
 import com.food.dao.CommentMapper;
+import com.food.model.dto.CommentInfo;
 import com.food.model.qo.InsertCommentReq;
+import com.food.model.vo.result.GetCommentResp;
 import com.food.po.Comment;
 import com.food.service.CommentService;
 import com.food.utils.BeanUtil;
@@ -26,10 +28,15 @@ public class CommentServiceImpl implements CommentService {
     private CommentMapper commentMapper;
 
     @Override
-    public List<Comment> getComment() {
+    public GetCommentResp getComment() {
+        GetCommentResp getCommentResp = new GetCommentResp();
+        List<CommentInfo> commentInfoList;
         // 获取评论列表
         List<Comment> commentList = commentMapper.selectAll();
-        return commentList;
+        commentInfoList = BeanUtil.copyPropertiesByFastJson(commentList, CommentInfo.class);
+
+        getCommentResp.setCommentInfoList(commentInfoList);
+        return getCommentResp;
     }
 
     @Override

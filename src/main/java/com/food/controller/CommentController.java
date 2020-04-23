@@ -5,6 +5,7 @@ import com.food.model.qo.InsertCommentReq;
 import com.food.model.qo.PageReq;
 import com.food.model.qo.InsertUserReq;
 import com.food.model.vo.result.FailResult;
+import com.food.model.vo.result.GetCommentResp;
 import com.food.model.vo.result.Result;
 import com.food.model.vo.result.SuccessResult;
 import com.food.po.Comment;
@@ -35,20 +36,14 @@ public class CommentController {
 
     /**
      * 获取评论列表
-     * @param pageReq
      * @return
      */
     @RequestMapping(value = "getComment", method = RequestMethod.POST)
     @ResponseBody
-    public Result getComment(@RequestBody @Validated PageReq pageReq) {
-        // 分页
-        Integer pageNum = pageReq.getPageNum() == null ? 1 : pageReq.getPageNum();
-        Integer pageSize = pageReq.getPageSize() == null ? 10 : pageReq.getPageSize();
-        PageHelper.startPage(pageNum, pageSize);
+    public Result getComment() {
         // 获取评论列表
-        List<Comment> commentList = commentService.getComment();
-        PageInfo<Comment> commentPageInfo = new PageInfo<>(commentList);
-        return new SuccessResult<>(commentPageInfo);
+        GetCommentResp getCommentResp = commentService.getComment();
+        return new SuccessResult<>(getCommentResp);
     }
 
 

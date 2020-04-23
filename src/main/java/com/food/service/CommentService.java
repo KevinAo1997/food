@@ -1,6 +1,7 @@
 package com.food.service;
 
 import com.food.model.qo.InsertCommentReq;
+import com.food.model.vo.result.GetCommentResp;
 import com.food.po.Comment;
 import java.util.List;
 
@@ -16,7 +17,7 @@ public interface CommentService {
      * 获取评论列表
      * @return
      */
-    List<Comment> getComment();
+    GetCommentResp getComment();
 
     /**
      * 新增评论
