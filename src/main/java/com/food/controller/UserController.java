@@ -2,6 +2,7 @@ package com.food.controller;
 
 import com.food.enums.ApplicationEnum;
 import com.food.model.qo.InsertUserReq;
+import com.food.model.qo.UserReq;
 import com.food.model.vo.result.FailResult;
 import com.food.model.vo.result.Result;
 import com.food.model.vo.result.SuccessResult;

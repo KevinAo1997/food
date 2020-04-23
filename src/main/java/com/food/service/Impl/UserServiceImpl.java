@@ -2,6 +2,7 @@ package com.food.service.Impl;
 
 import com.food.dao.UserMapper;
 import com.food.model.qo.InsertUserReq;
+import com.food.model.qo.UserReq;
 import com.food.po.User;
 import com.food.service.UserService;
 import com.food.utils.MD5Util;
